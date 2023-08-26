@@ -45,8 +45,8 @@
           "language": "zh-CN"
         },
         "nsis": {
-          "headerImage": "icons/headerImage.bmp",
-          "sidebarImage": "icons/sidebarImage.bmp",
+          "headerImage": "icons/150x57.bmp",
+          "sidebarImage": "icons/164x314.bmp",
           "installerIcon": "icons/icon.ico",
           "languages": ["SimpChinese", "English"]
         }
