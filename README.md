@@ -2,6 +2,9 @@
 
 初始化一个使用`Tauri`打包的桌面端应用，也可以配合Vue等一起使用.
 
+## 官方文档
+[Tauri](https://tauri.app/zh-cn/)
+
 ## 开发
 ```shell
 yarn run tauri dev
