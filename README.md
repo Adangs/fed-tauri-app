@@ -46,6 +46,11 @@ main:
 
 <img src='./img-2.png'>
 
+install:
+<img src='./img-4.png'>
+
+<img src='./img-5.png'>
+
 
 ## Recommended IDE Setup
 
