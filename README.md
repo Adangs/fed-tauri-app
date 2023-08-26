@@ -28,9 +28,9 @@ yarn run tauri build
 
 
 ### 下载
-> [Window x64 msi](./zip/)
+> [Window x64 msi](./zip/Adang_0.0.1_x64_zh-CN.msi)
 > 
-> [Window x64 nsis](./zip/)
+> [Window x64 nsis](./zip/Adang_0.0.1_x64-setup.exe)
 
 > [MAC dmg](./zip/Adang_0.0.1_x64.dmg)
 
