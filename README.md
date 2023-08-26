@@ -7,11 +7,13 @@
 
 ## 开发
 ```shell
+yarn
 yarn run tauri dev
 ```
 
 ## 发布
 ```shell
+yarn
 yarn run tauri build
 ```
 
