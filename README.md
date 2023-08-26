@@ -16,7 +16,7 @@ yarn run tauri build
 ```
 
 ### window 下的坑
-1、部分依赖文件很难下载成功，可以手动将文件放到`C:\Users\Administrator\AppData\Local`目录中. [File](./zip/tauri.zip)
+1、部分依赖文件很难下载成功，可以手动将文件放到`C:\Users\Administrator\AppData\Local`目录中. [Local File](./zip/tauri.zip)，将此压缩外解决到`Local\tauri`目录中；可以参考官方[issues](https://github.com/tauri-apps/tauri/issues/7338).
 
 2、`yarn run tauri dev` 或者 `yarn run tauri build` 的时候可能有很多包下载不成功，多执行几次就好了.
 
