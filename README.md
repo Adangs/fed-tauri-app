@@ -18,6 +18,10 @@ yarn run tauri build
 ### window 下的坑
 1、`yarn run tauri dev` 或者 `yarn run tauri build` 的时候可能有很多包下载不成功，多执行几次就好了.
 
+2、`NsisConfig`中的`headerImage`、`sidebarImage`必须使用在`window`系统下生成的`.bmp`图片文件.
+
+3、部分依赖文件很难下载成功，可以手动将文件放到`C:\Users\Administrator\AppData\Local`目录中.
+
 ### 下载
 > [Window x64 msi](./zip/)
 > 
