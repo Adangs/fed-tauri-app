@@ -20,6 +20,8 @@
     .content{ flex: 1; display: flex; align-items: center; justify-content: center; text-align: center;}
     .content h1{ animation: breathe 3s infinite; font-size: 50px;}
 
+    .footer{ text-align: center; font-size: 12px; color: #999; padding: 10px; }
+
     @keyframes breathe {
       0% { transform: scale(1); }
       50% { transform: scale(1.1); }
@@ -60,6 +62,7 @@
     <div class="content" style="">
       <h1>For HTML, For CSS, For JS...</h1>
     </div>
+    <div class="footer"></div>
   </view>
   <script>
     const { appWindow } = window.__TAURI__?.window || {}
@@ -136,7 +139,19 @@
       }
     }
 
+    const getVersion = async () => {
+      try {
+        if (window.__TAURI__) {
+          const version = await window.__TAURI__.app.getVersion()
+          document.querySelector('.footer').innerHTML = `version:${version}`
+        }
+      } catch (e) {
+        console.warn(e)
+      }
+    }
+
     getIsWindowState()
+    getVersion()
 
     // 模拟这个页面需要的加载时间
     setTimeout(() => {
