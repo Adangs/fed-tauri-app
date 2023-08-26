@@ -17,7 +17,14 @@
     .header .tools li.is-disabled{ opacity: .4; cursor: default;}
 
     .header .nav{ flex: 1; text-align: center; color: #fff; font-size: 20px; padding-right: 70px;}
-    .content{ flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 50px;}
+    .content{ flex: 1; display: flex; align-items: center; justify-content: center; text-align: center;}
+    .content h1{ animation: breathe 3s infinite; font-size: 50px;}
+
+    @keyframes breathe {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
   </style>
 </head>
 <body>
@@ -50,7 +57,9 @@
         </li>
       </ul>
     </div>
-    <div class="content" style="">For HTML, For CSS, For JS...</div>
+    <div class="content" style="">
+      <h1>For HTML, For CSS, For JS...</h1>
+    </div>
   </view>
   <script>
     const { appWindow } = window.__TAURI__?.window || {}
