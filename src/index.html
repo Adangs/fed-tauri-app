@@ -1,46 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tauri App</title>
-    <script type="module" src="/main.js" defer></script>
-    <style>
-      .logo.vanilla:hover {
-        filter: drop-shadow(0 0 2em #ffe21c);
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Adang's</title>
+  <style>
+    *{ margin: 0; padding: 0;}
+    ul,li{ list-style: none;}
+    .app{ width: 100%; height: 100vh; display: flex; flex-direction: column; overflow: hidden;}
+    .header{ height: 70px; background: #222; display: flex; align-items: center; padding: 0 10px;}
+    .header img{ width: 100%; height: 100%;}
+    .header .logo{ width: 50px; height: 50px; margin-right: 20px;}
+    .header .tools{ display: flex; align-items: center;}
+    .header .tools li{ width: 30px; height: 30px; padding: 5px; cursor: pointer;}
+    .header .tools li:hover{ border-radius: 50%; background-color: #000;}
 
-  <body>
-    <div class="container">
-      <h1>Welcome to Tauri!</h1>
-
-      <div class="row">
-        <a href="https://tauri.app" target="_blank">
-          <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
-        </a>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-          target="_blank"
-        >
-          <img
-            src="/assets/javascript.svg"
-            class="logo vanilla"
-            alt="JavaScript logo"
-          />
-        </a>
+    .header .nav{ flex: 1;}
+    .content{ flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 50px;}
+  </style>
+</head>
+<body>
+  <view class="app">
+    <div class="header">
+      <div class="logo">
+        <img src="./assets/javascript.svg">
       </div>
-
-      <p>Click on the Tauri logo to learn more about the framework</p>
-
-      <form class="row" id="greet-form">
-        <input id="greet-input" placeholder="Enter a name..." />
-        <button type="submit">Greet</button>
-      </form>
-
-      <p id="greet-msg"></p>
+      <ul class="tools">
+        <li>
+          <img src="./assets/svg-007.svg">
+        </li>
+        <li>
+          <img src="./assets/svg-006.svg">
+        </li>
+        <li>
+          <img src="./assets/svg-005.svg">
+        </li>
+      </ul>
+      <view class="nav"></view>
+      <ul class="tools menu">
+        <li>
+          <img src="./assets/svg-004.svg">
+        </li>
+        <li>
+          <img src="./assets/svg-006.svg">
+        </li>
+        <li>
+          <img src="./assets/svg-001.svg">
+        </li>
+      </ul>
     </div>
-  </body>
+    <div class="content" style="">For Fun, For Gamer...</div>
+  </view>
+</body>
 </html>

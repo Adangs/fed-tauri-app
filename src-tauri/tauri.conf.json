@@ -53,7 +53,7 @@
     },
     "security": {
       "dangerousRemoteDomainIpcAccess": [{
-        "domain": "www.github.com",
+        "domain": "adangs.github.io",
         "windows": ["main"],
         "enableTauriAPI": true
       }]
