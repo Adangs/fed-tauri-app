@@ -3,10 +3,17 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "description": "初始化一个使用Tauri打包的桌面端应用",
   "scripts": {
     "tauri": "tauri"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.4.0"
-  }
+  },
+  "keywords": [
+    "tauri",
+    "desktop",
+    "vue",
+    "exe"
+  ]
 }
