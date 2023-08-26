@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading</title>
+  <style>
+    *{ user-select: none; }
+    html,body,.loading{ width: 100%; height: 100%; padding: 0; overflow: hidden; margin: 0; border-radius: 5px; pointer-events: none;}
+    body{ font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;}
+    .loading{ display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background-color: rgba(255, 255, 255, .95);}
+    .loading .logo{ margin-bottom: 20px; width: 94px; height: 94px; background: url("./assets/javascript.svg") no-repeat; background-size: cover;}
+    .loading .icon{ width: 18px; height: 18px; animation: rotate .6s steps(12) infinite; background: url('data:image/png;base64,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') no-repeat; background-size: cover;}
+    .loading .footer{ position: absolute; width: 100%; left: 0; bottom: 0; padding: 10px; color: #bbb; text-align: center; font-size: 12px; line-height: 1.6; transform: scale(.8);}
+    @keyframes rotate {
+      from {
+        transform: rotate(0);
+        transform-origin: center center;
+      }
+      to {
+        transform: rotate(360deg);
+        transform-origin: center center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading">
+    <div class="logo"></div>
+    <div class="icon"></div>
+    <div class="footer">
+      <div class="copyright">Copyright © Adang .All Rights Reserved.</div>
+      <div class="version"></div>
+    </div>
+  </div>
+
+<script>
+  window.addEventListener('contextmenu', function(event) {
+    // 阻止默认右键菜单行为
+    event.preventDefault();
+  });
+
+  async function getVersion() {
+    try {
+      if (window.__TAURI__) {
+        const version = await window.__TAURI__.app.getVersion()
+        document.querySelector('.version').innerHTML = `version:${version}`
+      }
+    } catch (e) {
+      console.warn(e)
+    }
+  }
+  getVersion()
+</script>
+</body>
+</html>
