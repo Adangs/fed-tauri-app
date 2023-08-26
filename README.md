@@ -18,6 +18,13 @@ yarn run tauri build
 ### window 下的坑
 1、`yarn run tauri dev` 或者 `yarn run tauri build` 的时候可能有很多包下载不成功，多执行几次就好了.
 
+### 下载
+> [Window x64 msi](./zip/)
+> 
+> [Window x64 nsis](./zip/)
+
+> [MAC dmg](./zip/Adang_0.0.1_x64.dmg)
+
 ### 界面
 
 loading:
