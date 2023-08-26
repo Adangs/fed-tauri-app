@@ -72,7 +72,7 @@
         "width": 1400,
         "height": 800,
         "url": "index.html",
-        "visible": false
+        "visible": true
       },
       {
         "fullscreen": false,
