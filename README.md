@@ -36,8 +36,6 @@ yarn run tauri build
 
 ### 界面
 
-gif:
-
 <img src='./img-3.gif'>
 
 loading:
