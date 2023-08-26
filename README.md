@@ -5,6 +5,8 @@
 ## 官方文档
 [Tauri](https://tauri.app/zh-cn/)
 
+[开发环境安装](https://tauri.app/zh-cn/v1/guides/getting-started/prerequisites)
+
 ## 开发
 ```shell
 yarn
